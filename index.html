@@ -10,9 +10,34 @@
     <style type="text/css">
         #main {
             background-color: antiquewhite;
-            width: 400px;
+            width: 900px;
             height: 400px;
+            margin-top: 50px;
+	        margin-left: 50px;
         }
+        div#caja1, div#caja2 {
+            width: calc(100% - 10%);
+            height: 176px;
+            margin-top: 16px;
+            margin-left: 5%;
+            box-sizing: border-box;
+            background-color: lightslategray;
+            padding: 50px;
+        }
+        div#main::before {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            color: rebeccapurple;
+        }
+            .lista {
+                width: 60px;
+                height: 60px;
+                background-color: brown;
+                display: inline-block;
+                margin-left: 50px;
+            }
     </style>
 
     <div id="main">
